@@ -22,7 +22,7 @@ public class MojangNameLookup {
 
         InputStream inputStream = null;
         try {
-            URL url = new URL("https://sessionserver.mojang.com/session/minecraft/profile/" + id.toString().replace("-", ""));
+            URL url = new URL("https://ares.lul.tf/ares-api/sessionserver/minecraft/profile/" + id.toString().replace("-", ""));
             URLConnection connection = url.openConnection();
             connection.setConnectTimeout(15000);
             connection.setReadTimeout(15000);
